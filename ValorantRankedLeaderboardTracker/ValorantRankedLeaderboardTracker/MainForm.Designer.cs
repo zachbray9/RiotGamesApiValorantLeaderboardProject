@@ -74,7 +74,7 @@ namespace ValorantRankedLeaderboardTracker
             // 
             // leaderBoardListBox
             // 
-            this.leaderBoardListBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.playersBindingSource, "GameName", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.leaderBoardListBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.playersBindingSource, "GameName", true));
             this.leaderBoardListBox.DataSource = this.playersBindingSource;
             this.leaderBoardListBox.DisplayMember = "GameName";
             this.leaderBoardListBox.FormattingEnabled = true;
