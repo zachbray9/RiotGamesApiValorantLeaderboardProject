@@ -74,7 +74,7 @@ namespace ValorantRankedLeaderboardTracker
             // 
             // leaderBoardListBox
             // 
-            this.leaderBoardListBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.playersBindingSource, "GameName", true));
+            this.leaderBoardListBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.playersBindingSource, "GameName", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.leaderBoardListBox.DataSource = this.playersBindingSource;
             this.leaderBoardListBox.DisplayMember = "GameName";
             this.leaderBoardListBox.FormattingEnabled = true;
@@ -82,7 +82,7 @@ namespace ValorantRankedLeaderboardTracker
             this.leaderBoardListBox.Name = "leaderBoardListBox";
             this.leaderBoardListBox.Size = new System.Drawing.Size(262, 290);
             this.leaderBoardListBox.TabIndex = 0;
-            this.leaderBoardListBox.ValueMember = "_AdditionalProperties";
+            this.leaderBoardListBox.ValueMember = "GameName";
             // 
             // playersBindingSource
             // 
@@ -119,7 +119,8 @@ namespace ValorantRankedLeaderboardTracker
             this.rankedRatingTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.playersBindingSource, "RankedRating", true));
             this.rankedRatingTextBox.Location = new System.Drawing.Point(108, 234);
             this.rankedRatingTextBox.Name = "rankedRatingTextBox";
-            this.rankedRatingTextBox.Size = new System.Drawing.Size(314, 20);
+            this.rankedRatingTextBox.ReadOnly = true;
+            this.rankedRatingTextBox.Size = new System.Drawing.Size(382, 20);
             this.rankedRatingTextBox.TabIndex = 11;
             // 
             // rankedRatingLabel
@@ -136,7 +137,8 @@ namespace ValorantRankedLeaderboardTracker
             this.tagLineTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.playersBindingSource, "TagLine", true));
             this.tagLineTextBox.Location = new System.Drawing.Point(108, 187);
             this.tagLineTextBox.Name = "tagLineTextBox";
-            this.tagLineTextBox.Size = new System.Drawing.Size(314, 20);
+            this.tagLineTextBox.ReadOnly = true;
+            this.tagLineTextBox.Size = new System.Drawing.Size(382, 20);
             this.tagLineTextBox.TabIndex = 9;
             // 
             // tagLineLabel
@@ -153,7 +155,8 @@ namespace ValorantRankedLeaderboardTracker
             this.puuidTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.playersBindingSource, "Puuid", true));
             this.puuidTextBox.Location = new System.Drawing.Point(108, 137);
             this.puuidTextBox.Name = "puuidTextBox";
-            this.puuidTextBox.Size = new System.Drawing.Size(314, 20);
+            this.puuidTextBox.ReadOnly = true;
+            this.puuidTextBox.Size = new System.Drawing.Size(382, 20);
             this.puuidTextBox.TabIndex = 7;
             // 
             // puuidLabel
@@ -170,7 +173,8 @@ namespace ValorantRankedLeaderboardTracker
             this.gameNameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.playersBindingSource, "GameName", true));
             this.gameNameTextBox.Location = new System.Drawing.Point(108, 84);
             this.gameNameTextBox.Name = "gameNameTextBox";
-            this.gameNameTextBox.Size = new System.Drawing.Size(314, 20);
+            this.gameNameTextBox.ReadOnly = true;
+            this.gameNameTextBox.Size = new System.Drawing.Size(382, 20);
             this.gameNameTextBox.TabIndex = 5;
             // 
             // gameNameLabel
@@ -187,7 +191,8 @@ namespace ValorantRankedLeaderboardTracker
             this.numberOfWinsTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.playersBindingSource, "NumberOfWins", true));
             this.numberOfWinsTextBox.Location = new System.Drawing.Point(108, 283);
             this.numberOfWinsTextBox.Name = "numberOfWinsTextBox";
-            this.numberOfWinsTextBox.Size = new System.Drawing.Size(314, 20);
+            this.numberOfWinsTextBox.ReadOnly = true;
+            this.numberOfWinsTextBox.Size = new System.Drawing.Size(382, 20);
             this.numberOfWinsTextBox.TabIndex = 3;
             // 
             // numberOfWinsLabel
@@ -204,6 +209,7 @@ namespace ValorantRankedLeaderboardTracker
             this.rankTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.playersBindingSource, "LeaderboardRank", true));
             this.rankTextBox.Location = new System.Drawing.Point(108, 33);
             this.rankTextBox.Name = "rankTextBox";
+            this.rankTextBox.ReadOnly = true;
             this.rankTextBox.Size = new System.Drawing.Size(76, 20);
             this.rankTextBox.TabIndex = 1;
             // 

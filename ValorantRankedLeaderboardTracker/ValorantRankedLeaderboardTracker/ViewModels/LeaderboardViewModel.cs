@@ -10,8 +10,10 @@ using MingweiSamuel.Camille.ValRankedV1;
 
 namespace ValorantRankedLeaderboardTracker
 {
-    class LeaderboardViewModel
+    class LeaderboardViewModel : INotifyPropertyChanged
     {
+        public event PropertyChangedEventHandler PropertyChanged;
+
         public RiotApi RiotApi { get; set; }
         public BindingList<Player> Players { get; set; }
         public string Shard { get; set; }
@@ -23,5 +25,6 @@ namespace ValorantRankedLeaderboardTracker
             RiotApi = riotApi;
         }
 
+        
     }
 }

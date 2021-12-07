@@ -12,3 +12,4 @@ C:\Users\zachb\OneDrive\Documents\Github Repositories\ValorantApiProject\Valoran
 C:\Users\zachb\OneDrive\Documents\Github Repositories\ValorantApiProject\ValorantRankedLeaderboardTracker\ValorantRankedLeaderboardTracker\bin\Debug\Newtonsoft.Json.dll
 C:\Users\zachb\OneDrive\Documents\Github Repositories\ValorantApiProject\ValorantRankedLeaderboardTracker\ValorantRankedLeaderboardTracker\bin\Debug\Newtonsoft.Json.xml
 C:\Users\zachb\OneDrive\Documents\Github Repositories\ValorantApiProject\ValorantRankedLeaderboardTracker\ValorantRankedLeaderboardTracker\obj\Debug\ValorantRankedLeaderboardTracker.csproj.CopyComplete
+C:\Users\zachb\OneDrive\Documents\Github Repositories\ValorantApiProject\ValorantRankedLeaderboardTracker\ValorantRankedLeaderboardTracker\obj\Debug\ValorantRankedLeaderboardTracker.csproj.Fody.CopyLocal.cache
