@@ -1,10 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using MingweiSamuel.Camille;
 using MingweiSamuel.Camille.Enums;
@@ -41,6 +36,11 @@ namespace ValorantRankedLeaderboardTracker
             {
                 MessageBox.Show("Invalid query parameter", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void leaderBoardListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }

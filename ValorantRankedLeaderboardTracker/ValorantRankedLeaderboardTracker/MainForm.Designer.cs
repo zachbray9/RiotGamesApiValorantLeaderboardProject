@@ -31,7 +31,6 @@ namespace ValorantRankedLeaderboardTracker
         {
             this.components = new System.ComponentModel.Container();
             this.leaderBoardGroupBox = new System.Windows.Forms.GroupBox();
-            this.leaderBoardListBox = new System.Windows.Forms.ListBox();
             this.playersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.viewModelBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.playerDetailsGroupBox = new System.Windows.Forms.GroupBox();
@@ -55,6 +54,7 @@ namespace ValorantRankedLeaderboardTracker
             this.actLabel = new System.Windows.Forms.Label();
             this.apiKeyTextBox = new System.Windows.Forms.TextBox();
             this.apiKeyLabel = new System.Windows.Forms.Label();
+            this.leaderBoardListBox = new System.Windows.Forms.ListBox();
             this.leaderBoardGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.playersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.viewModelBindingSource)).BeginInit();
@@ -71,18 +71,6 @@ namespace ValorantRankedLeaderboardTracker
             this.leaderBoardGroupBox.TabIndex = 0;
             this.leaderBoardGroupBox.TabStop = false;
             this.leaderBoardGroupBox.Text = "Leaderboard (Top 200)";
-            // 
-            // leaderBoardListBox
-            // 
-            this.leaderBoardListBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.playersBindingSource, "GameName", true));
-            this.leaderBoardListBox.DataSource = this.playersBindingSource;
-            this.leaderBoardListBox.DisplayMember = "GameName";
-            this.leaderBoardListBox.FormattingEnabled = true;
-            this.leaderBoardListBox.Location = new System.Drawing.Point(6, 19);
-            this.leaderBoardListBox.Name = "leaderBoardListBox";
-            this.leaderBoardListBox.Size = new System.Drawing.Size(262, 290);
-            this.leaderBoardListBox.TabIndex = 0;
-            this.leaderBoardListBox.ValueMember = "GameName";
             // 
             // playersBindingSource
             // 
@@ -305,6 +293,16 @@ namespace ValorantRankedLeaderboardTracker
             this.apiKeyLabel.TabIndex = 0;
             this.apiKeyLabel.Text = "API Key:";
             // 
+            // leaderBoardListBox
+            // 
+            this.leaderBoardListBox.DataSource = this.playersBindingSource;
+            this.leaderBoardListBox.DisplayMember = "GameName";
+            this.leaderBoardListBox.FormattingEnabled = true;
+            this.leaderBoardListBox.Location = new System.Drawing.Point(6, 19);
+            this.leaderBoardListBox.Name = "leaderBoardListBox";
+            this.leaderBoardListBox.Size = new System.Drawing.Size(262, 290);
+            this.leaderBoardListBox.TabIndex = 0;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -331,7 +329,6 @@ namespace ValorantRankedLeaderboardTracker
         #endregion
 
         private System.Windows.Forms.GroupBox leaderBoardGroupBox;
-        private System.Windows.Forms.ListBox leaderBoardListBox;
         private System.Windows.Forms.GroupBox playerDetailsGroupBox;
         private System.Windows.Forms.TextBox puuidTextBox;
         private System.Windows.Forms.Label puuidLabel;
@@ -355,6 +352,7 @@ namespace ValorantRankedLeaderboardTracker
         private System.Windows.Forms.Label apiKeyLabel;
         private System.Windows.Forms.BindingSource viewModelBindingSource;
         private System.Windows.Forms.BindingSource playersBindingSource;
+        private System.Windows.Forms.ListBox leaderBoardListBox;
     }
 }
 
